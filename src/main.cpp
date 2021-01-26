@@ -1,4 +1,4 @@
-#include "mainwindow.hpp"
+#include "nomoremess.hpp"
 
 #include <QApplication>
 

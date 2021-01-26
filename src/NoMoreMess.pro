@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui concurrent
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,10 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    nomoremess.cpp
+    nomoremess.cpp \
+    statistics.cpp
 
 HEADERS += \
-    mainwindow.hpp
+    nomoremess.hpp \
+    statistics.hpp
 
 FORMS += \
     nomoremess.ui
