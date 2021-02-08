@@ -1,4 +1,4 @@
-QT       += core gui concurrent
+QT       += core gui concurrent charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,11 +11,15 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     nomoremess.cpp \
-    statistics.cpp
+    processingworker.cpp \
+    statistics.cpp \
+    ../third_party/easyexif/exif.cpp
 
 HEADERS += \
     nomoremess.hpp \
-    statistics.hpp
+    processingworker.hpp \
+    statistics.hpp \
+    ../third_party/easyexif/exif.h
 
 FORMS += \
     nomoremess.ui

@@ -27,12 +27,15 @@ private slots:
 
     void on_reloadStatisticsButton_released();
 
+    void on_doMagicButton_released();
+
 signals:
     void read_stats(const QString &dir, bool recursive);
 
 private:
     Ui::NoMoreMess *ui;
     QThread* m_statsThread;
+    QThread* m_processThread;
 
     QProgressDialog* m_progressBar;
 };
